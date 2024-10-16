@@ -1,0 +1,27 @@
+.card {
+    position: relative;
+    overflow: hidden; /* Assure que le contenu reste dans les limites */
+    transition: opacity 0.3s ease;
+  }
+  
+  .card img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .card h2, .card p {
+    position: absolute; /* Positionner le texte au-dessus du drapeau */
+    bottom: 10px; /* Ajuste pour positionner le texte comme souhaité */
+    left: 10px; /* Ajuste selon le besoin */
+    color: rgba(255, 255, 255, 0); /* Texte transparent par défaut */
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover img {
+    opacity: 0.3; /* Drapeau devient légèrement transparent */
+  }
+  
+  .card:hover h2,
+  .card:hover p {
+    color: rgba(255, 255, 255, 1); /* Texte devient visible */
+  }
+  
